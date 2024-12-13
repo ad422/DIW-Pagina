@@ -1,0 +1,360 @@
+/* Estilo global para la fuente */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo para el encabezado */
+#cabecera {
+    text-align: center;
+    font-size: 50px;
+    background-image: linear-gradient(to right, #440885, #382CCE, #43CADB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Contenedor del menú principal */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+/* Contenedor de la izquierda */
+.menu-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.menu-left ul li a:hover,
+.menu-left ul li a:focus {
+    background-color: #43CADB;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Contenedor de la derecha */
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Imagen */
+.menu img {
+    width: 100px;
+    height: 90px;
+}
+
+/* Estilo general para los enlaces del menú */
+.item {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.item:hover,
+.item:focus {
+    background-color: #43CADB;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 5px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #43CADB;
+    color: white;
+}
+
+/* Contenedor de búsqueda */
+#busquedas {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#busquedas svg {
+    color: #440885;
+    width: 20px;
+    height: 20px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+#busquedas:focus-within {
+    border-color: #440885;
+}
+.cursos, #cabecera, #titulot , .dropdown-toggle{
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Estilo del perfil y barra lateral (Optimización en una sola clase) */
+#perfil, #barralateral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil svg, #barralateral svg {
+    color: #440885;
+    width: 32px;
+    height: 32px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#perfil:hover svg, #barralateral:hover svg {
+    color: #440885;
+    transform: scale(1.1);
+}
+
+/* Contenedor principal de las cajas */
+.cajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cajas > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.cajas img {
+    max-width: 100%;
+    max-height: 70%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.cajas h2 {
+    font-size: 16px;
+    margin: 10px 0 0;
+    color: #333;
+}
+
+/* Testimonios */
+.Testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.testimony {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimony img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.testimony p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #43CADB;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons .icon {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    color: #43CADB;
+}
+
+/* Media Queries */
+@media (max-width: 575px) {
+    #cabecera {
+        font-size: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cajas {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cajas > div {
+        width: 100%;
+        height: auto;
+    }
+
+    .Testimonios .testimony {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    #cabecera {
+        font-size: 40px;
+    }
+
+    .cajas > div {
+        width: 45%;
+    }
+
+    .Testimonios .testimony {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    #cabecera {
+        font-size: 50px;
+    }
+
+    .cajas > div {
+        width: 200px;
+    }
+
+    .Testimonios .testimony {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
