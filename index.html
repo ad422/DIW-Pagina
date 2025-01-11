@@ -25,7 +25,9 @@
         <div class="menu">
             <!-- Contenedor izquierda -->
             <div class="menu-left">
+                <a href="index.html">
                 <img src="logo (2).png" alt="logo" class="item">
+                </a>
                 <ul class="item">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">
@@ -35,9 +37,12 @@
                             </svg>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Curso 1</a></li>
-                            <li><a href="#">Curso 2</a></li>
-                            <li><a href="#">Curso 3</a></li>
+                            <li><a href="#">Programación</a></li>
+                            <li><a href="#">Diseño</a></li>
+                            <li><a href="#">Ciencia de Datos</a></li>
+                            <li><a href="#">Marketing Digital</a></li>
+                            <li><a href="#">Ciberseguridad</a></li>
+                            <li><a href="#">IA</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -51,14 +56,31 @@
                     <input type="text" class="search-input">
                 </div>
                 <div class="item" id="perfil">
+                    <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                     </svg>
+                    </a>
                 </div>
                 <div class="item" id="barralateral">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <input type="checkbox" id="toggle-sidebar" hidden>
+  
+                    <!-- Icono de menú para activar la barra lateral -->
+                    <label for="toggle-sidebar" class="menu-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
+                      </svg>
+                    </label>
+                  
+                    <!-- Barra lateral -->
+                    <div class="sidebar">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Dejar Testimonio</a></li>
+                      </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,10 +151,9 @@
             <!-- Parte derecha: Links y redes sociales -->
             <div class="footer-right">
                 <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
                 <div class="social-icons">
                     <a href="#" class="icon">
