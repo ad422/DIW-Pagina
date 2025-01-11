@@ -301,6 +301,81 @@ body {
 .social-icons .icon:hover {
     color: #43CADB;
 }
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+  }
+  
+  .menu-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Barra lateral */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Barra oculta inicialmente */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    color: #333;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000; /* Barra siempre encima */
+  }
+  
+  /* Mostrar barra lateral al hacer clic en el ícono */
+  #toggle-sidebar:checked ~ .sidebar {
+    right: 0; /* Barra se desliza desde la derecha */
+  }
+  
+  /* Estilo de la lista dentro de la barra lateral */
+  .sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #43CADB;
+  }
+  .cajas > div:hover {
+    background-color: #43CADB; /* Azul al pasar el cursor */
+    transform: translateY(-5px); /* Elevar ligeramente la caja */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  }
+  
+  /* Cambiar color del texto dentro de la caja cuando está en hover */
+  .cajas > div:hover h2 {
+    color: #fff;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 80%;
+    }
+  
+    .menu-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 
 /* Media Queries */
 @media (max-width: 575px) {
